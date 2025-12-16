@@ -1,0 +1,278 @@
+#All of this is BPL custom
+#The base for all edible grilled organs
+- type: entity
+  parent: FoodMeatBase
+  id: FoodMeatOrganBase
+  name: Grilled Organ
+  description: "An Organ grilled to perfection."
+  components:
+  - type: Tag
+    tags:
+    - Cooked
+    - Meat
+  - type: Sprite
+    sprite: Objects/Consumable/Food/organs_bpl.rsi
+  - type: Item
+    size: Small
+    inhandVisuals:
+      left:
+      - state: generic-pink-inhand-left
+      right:
+      - state: generic-pink-inhand-right
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 5
+  - type: Edible
+  - type: Extractable
+    grindableSolutionName: food
+
+# Starting with the human organs
+- type: entity
+  parent: FoodMeatOrganBase
+  id: FoodMeatHumanAppendixCooked
+  name: Grilled Human Appendix
+  description: "At least now it serves a purpose."
+  components:
+  - type: Sprite
+    layers:
+    - state: human-appendix-cooked
+  - type: FlavorProfile
+    flavors:
+    - people
+    - meaty
+  - type: Construction
+    graph: GrilledHumanAppendix
+    node: human appendix cooked
+
+- type: entity
+  parent: FoodMeatOrganBase
+  id: FoodMeatHumanBrainCooked
+  name: Grilled Human Brain
+  description: "Some think it a delicacy."
+  components:
+  - type: Sprite
+    layers:
+    - state: human-brain-cooked
+  - type: FlavorProfile
+    flavors:
+    - people
+    - meaty
+  - type: Construction
+    graph: GrilledHumanBrain
+    node: human brain cooked
+
+- type: entity
+  parent: FoodMeatOrganBase
+  id: FoodMeatHumanEarsCooked
+  name: Grilled Human Ears
+  description: "One can almost still hear it sizzling."
+  components:
+  - type: Sprite
+    layers:
+    - state: human-ears-cooked
+  - type: FlavorProfile
+    flavors:
+    - people
+    - meaty
+  - type: Construction
+    graph: GrilledHumanEars
+    node: human ears cooked
+
+- type: entity
+  parent: FoodMeatOrganBase
+  id: FoodMeatHumanEyesCooked
+  name: Grilled Human Eyes
+  description: "A feast for the eyes."
+  components:
+  - type: Sprite
+    layers:
+    - state: human-eyeball-l-cooked
+    - state: human-eyeball-r-cooked
+  - type: FlavorProfile
+    flavors:
+    - people
+    - meaty
+  - type: Construction
+    graph: GrilledHumanEyes
+    node: human eyes cooked
+
+- type: entity
+  parent: FoodMeatOrganBase
+  id: FoodMeatHumanHeartCooked
+  name: Grilled Human Heart
+  description: "Feast upon the hearts of your enemies."
+  components:
+    - type: Sprite
+      layers:
+      - state: human-heart-cooked
+    - type: FlavorProfile
+      flavors:
+      - people
+      - meaty
+    - type: Construction
+      graph: GrilledHumanHeart
+      node: human heart cooked
+
+- type: entity
+  parent: FoodMeatOrganBase
+  id: FoodMeatHumanKidneysCooked
+  name: Grilled Human Kidneys
+  description: "Watch for stones."
+  components:
+  - type: Sprite
+    layers:
+    - state: human-kidney-l-cooked
+    - state: human-kidney-r-cooked
+  - type: FlavorProfile
+    flavors:
+    - people
+    - meaty
+  - type: Construction
+    graph: GrilledHumanKidneys
+    node: human kidneys cooked
+
+- type: entity
+  parent: FoodMeatOrganBase
+  id: FoodMeatHumanLiverCooked
+  name: Grilled Human Liver
+  description: "Would pair well with a nice Chianti."
+  components:
+  - type: Sprite
+    layers:
+    - state: human-liver-cooked
+  - type: FlavorProfile
+    flavors:
+    - people
+    - meaty
+  - type: Construction
+    graph: GrilledHumanLiver
+    node: human liver cooked
+
+- type: entity
+  parent: FoodMeatOrganBase
+  id: FoodMeatHumanLungsCooked
+  name: Grilled Human Lungs
+  description: "Breathe in the smell."
+  components:
+  - type: Sprite
+    layers:
+    - state: human-lung-l-cooked
+    - state: human-lung-r-cooked
+  - type: FlavorProfile
+    flavors:
+    - people
+    - meaty
+  - type: Construction
+    graph: GrilledHumanLungs
+    node: human lungs cooked
+
+- type: entity
+  parent: FoodMeatOrganBase
+  id: FoodMeatHumanStomachCooked
+  name: Grilled Human Stomach
+  description: "Time to fill yours."
+  components:
+  - type: Sprite
+    layers:
+    - state: human-stomach-cooked
+  - type: FlavorProfile
+    flavors:
+    - people
+    - meaty
+  - type: Construction
+    graph: GrilledHumanStomach
+    node: human stomach cooked
+
+#The animal organs next
+- type: entity
+  parent: FoodMeatOrganBase
+  id: FoodMeatAnimalKidneysCooked
+  name: Grilled Kidneys
+  description: "Almost identical to most other meats."
+  components:
+  - type: Sprite
+    layers:
+    - state: human-kidney-l-cooked
+    - state: human-kidney-r-cooked
+  - type: FlavorProfile
+    flavors:
+    - chicken
+    - meaty
+  - type: Construction
+    graph: GrilledAnimalKidneys
+    node: animal kidneys cooked
+
+- type: entity
+  parent: FoodMeatOrganBase
+  id: FoodMeatAnimalLiverCooked
+  name: Grilled Liver
+  description: "A delicacy in many regions."
+  components:
+  - type: Sprite
+    layers:
+    - state: human-liver-cooked
+  - type: FlavorProfile
+    flavors:
+    - chicken
+    - meaty
+  - type: Construction
+    graph: GrilledAnimalLiver
+    node: animal liver cooked
+
+- type: entity
+  parent: FoodMeatOrganBase
+  id: FoodMeatAnimalLungsCooked
+  name: Grilled Lungs
+  description: "Usually minced and added to other things."
+  components:
+  - type: Sprite
+    layers:
+    - state: human-lung-l-cooked
+    - state: human-lung-r-cooked
+  - type: FlavorProfile
+    flavors:
+    - chicken
+    - meaty
+  - type: Construction
+    graph: GrilledAnimalLungs
+    node: animal lungs cooked
+
+- type: entity
+  parent: FoodMeatOrganBase
+  id: FoodMeatAnimalHeartCooked
+  name: Grilled Heart
+  description: "Some would argue the tastiest muscle."
+  components:
+  - type: Sprite
+    layers:
+    - state: human-heart-cooked
+  - type: FlavorProfile
+    flavors:
+    - chicken
+    - meaty
+  - type: Construction
+    graph: GrilledAnimalHeart
+    node: animal heart cooked
+
+- type: entity
+  parent: FoodMeatOrganBase
+  id: FoodMeatAnimalStomachCooked
+  name: Grilled Stomach
+  description: "Very close to a sausage in texture."
+  components:
+  - type: Sprite
+    layers:
+    - state: human-stomach-cooked
+  - type: FlavorProfile
+    flavors:
+    - chicken
+    - meaty
+  - type: Construction
+    graph: GrilledAnimalStomach
+    node: animal stomach cooked

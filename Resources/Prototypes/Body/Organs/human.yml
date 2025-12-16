@@ -26,6 +26,29 @@
   - type: Tag
     tags:
       - Meat
+  # This is BPL custom and needed for it to cook
+  - type: InternalTemperature
+    thickness: 0.02
+    conductivity: 0.43
+    area: 0.02 #Same as the regular meat
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Meaterial: 300
+  - type: Temperature
+    currentTemperature: 290
+  # Fixtures are overridden
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 1
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
 
 - type: entity
   id: BaseHumanOrgan
@@ -74,6 +97,11 @@
   - type: Item
     size: Small
     heldPrefix: brain
+  # This is BPL custom
+  - type: Construction
+    graph: GrilledHumanBrain
+    node: start
+    defaultTarget: human brain cooked
 
 - type: entity
   id: OrganHumanEyes
@@ -88,6 +116,11 @@
   - type: Item
     size: Small
     heldPrefix: eyeballs
+  # This is BPL custom
+  - type: Construction
+    graph: GrilledHumanEyes
+    node: start
+    defaultTarget: human eyes cooked
 
 - type: entity
   id: OrganHumanTongue
@@ -108,6 +141,11 @@
     - state: appendix
     - state: appendix-inflamed
       visible: false
+  # This is BPL custom
+  - type: Construction
+    graph: GrilledHumanAppendix
+    node: start
+    defaultTarget: human appendix cooked
 
 - type: entity
   id: OrganHumanEars
@@ -117,6 +155,11 @@
   components:
   - type: Sprite
     state: ears
+  # This is BPL custom
+  - type: Construction
+    graph: GrilledHumanEars
+    node: start
+    defaultTarget: human ears cooked
 
 - type: entity
   id: OrganHumanLungs
@@ -154,6 +197,11 @@
         reagents:
         - ReagentId: UncookedAnimalProteins
           Quantity: 5
+  # This is BPL custom
+  - type: Construction
+    graph: GrilledHumanLungs
+    node: start
+    defaultTarget: human lungs cooked
 
 - type: entity
   id: OrganHumanHeart
@@ -176,6 +224,11 @@
   - type: Item
     size: Small
     heldPrefix: heart
+  # This is BPL custom
+  - type: Construction
+    graph: GrilledHumanHeart
+    node: start
+    defaultTarget: human heart cooked
 
 - type: entity
   id: OrganHumanStomach
@@ -208,6 +261,11 @@
     groups:
     - id: Food
     - id: Drink
+  # This is BPL custom
+  - type: Construction
+    graph: GrilledHumanStomach
+    node: start
+    defaultTarget: human stomach cooked
 
 - type: entity
   id: OrganHumanLiver
@@ -225,6 +283,11 @@
     metabolizerTypes: [Human]
     groups:
     - id: Alcohol
+  # This is BPL custom
+  - type: Construction
+    graph: GrilledHumanLiver
+    node: start
+    defaultTarget: human liver cooked
 
 - type: entity
   id: OrganHumanKidneys
@@ -244,3 +307,8 @@
     maxReagents: 5
     metabolizerTypes: [Human]
     removeEmpty: true
+  # This is BPL custom
+  - type: Construction
+    graph: GrilledHumanKidneys
+    node: start
+    defaultTarget: human kidneys cooked

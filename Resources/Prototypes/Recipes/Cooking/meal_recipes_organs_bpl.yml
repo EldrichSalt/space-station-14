@@ -1,0 +1,137 @@
+#All of this is BPL custom
+#Human organs first
+- type: microwaveMealRecipe
+  id: RecipeHumanAppendix
+  name: human appendix recipe
+  result: FoodMeatHumanAppendixCooked
+  time: 5
+  group: Savory
+  solids:
+    OrganHumanAppendix: 1
+
+- type: microwaveMealRecipe
+  id: RecipeHumanBrain
+  name: human brain recipe
+  result: FoodMeatHumanBrainCooked
+  time: 5
+  group: Savory
+  solids:
+    OrganHumanBrain: 1
+
+- type: microwaveMealRecipe
+  id: RecipeHumanEars
+  name: human ears recipe
+  result: FoodMeatHumanEarsCooked
+  time: 5
+  group: Savory
+  solids:
+    OrganHumanEars: 1
+
+- type: microwaveMealRecipe
+  id: RecipeHumanEyes
+  name: human eyes recipe
+  result: FoodMeatHumanEyesCooked
+  time: 5
+  group: Savory
+  solids:
+    OrganHumanEyes: 1
+
+- type: microwaveMealRecipe
+  id: RecipeHumanHeart
+  name: human heart recipe
+  result: FoodMeatHumanHeartCooked
+  time: 5
+  group: Savory
+  solids:
+    OrganHumanHeart: 1
+
+- type: microwaveMealRecipe
+  id: RecipeHumanKidneys
+  name: human kidneys recipe
+  result: FoodMeatHumanKidneysCooked
+  time: 5
+  group: Savory
+  solids:
+    OrganHumanKidneys: 1
+
+- type: microwaveMealRecipe
+  id: RecipeHumanLiver
+  name: human liver recipe
+  result: FoodMeatHumanLiverCooked
+  time: 5
+  group: Savory
+  solids:
+    OrganHumanLiver: 1
+
+- type: microwaveMealRecipe
+  id: RecipeHumanLungs
+  name: human lungs recipe
+  result: FoodMeatHumanLungsCooked
+  time: 5
+  group: Savory
+  solids:
+    OrganHumanLungs: 1
+
+- type: microwaveMealRecipe
+  id: RecipeHumanStomach
+  name: human stomach recipe
+  result: FoodMeatHumanStomachCooked
+  time: 5
+  group: Savory
+  solids:
+    OrganHumanStomach: 1
+
+#Animal Recipes next
+- type: microwaveMealRecipe
+  id: RecipeAnimalKidneys
+  name: animal kidneys recipe
+  result: FoodMeatAnimalKidneysCooked
+  time: 5
+  group: Savory
+  solids:
+    OrganAnimalKidneys: 1
+
+- type: microwaveMealRecipe
+  id: RecipeAnimalLiver
+  name: animal liver recipe
+  result: FoodMeatAnimalLiverCooked
+  time: 5
+  group: Savory
+  solids:
+    OrganAnimalLiver: 1
+
+- type: microwaveMealRecipe
+  id: RecipeAnimalLungs
+  name: animal lungs recipe
+  result: FoodMeatAnimalLungsCooked
+  time: 5
+  group: Savory
+  solids:
+    OrganAnimalLungs: 1
+
+- type: microwaveMealRecipe
+  id: RecipeAnimalHeart
+  name: animal heart recipe
+  result: FoodMeatAnimalHeartCooked
+  time: 5
+  group: Savory
+  solids:
+    OrganAnimalHeart: 1
+
+- type: microwaveMealRecipe
+  id: RecipeAnimalStomach
+  name: animal stomach recipe
+  result: FoodMeatAnimalStomachCooked
+  time: 5
+  group: Savory
+  solids:
+    OrganAnimalStomach: 1
+
+- type: microwaveMealRecipe
+  id: RecipeMouseStomach
+  name: mouse stomach recipe
+  result: FoodMeatAnimalStomachCooked
+  time: 5
+  group: Savory
+  solids:
+    OrganMouseStomach: 1

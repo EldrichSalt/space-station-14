@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from the rest of the codebase and modified by EldrichSalt",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "generic-pink-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "generic-pink-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "human-appendix-cooked"
+    },
+    {
+      "name": "human-brain-cooked"
+    },
+    {
+      "name": "human-ears-cooked"
+    },
+    {
+      "name": "human-eyeball-l-cooked"
+    },
+    {
+      "name": "human-eyeball-r-cooked"
+    },
+    {
+      "name": "human-heart-cooked"
+    },
+    {
+      "name": "human-kidney-l-cooked"
+    },
+    {
+      "name": "human-kidney-r-cooked"
+    },
+    {
+      "name": "human-liver-cooked"
+    },
+    {
+      "name": "human-lung-l-cooked"
+    },
+    {
+      "name": "human-lung-r-cooked"
+    },
+    {
+      "name": "human-muscle-cooked"
+    },
+    {
+      "name": "human-nerve-cooked"
+    },
+    {
+      "name": "human-stomach-cooked"
+    },
+    {
+      "name": "human-tongue-cooked"
+    },
+    {
+      "name": "human-vessel-cooked"
+    }
+  ]
+
+}

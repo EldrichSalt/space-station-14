@@ -1,0 +1,254 @@
+#All of this is BPL custom
+#These are the construction graphs
+
+#Human Appendix
+- type: constructionGraph
+  id: GrilledHumanAppendix
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: human appendix cooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: human appendix cooked
+    entity: FoodMeatHumanAppendixCooked
+
+#Human Brain
+- type: constructionGraph
+  id: GrilledHumanBrain
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: human brain cooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: human brain cooked
+    entity: FoodMeatHumanBrainCooked
+
+#Human Ears
+- type: constructionGraph
+  id: GrilledHumanEars
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: human ears cooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: human ears cooked
+    entity: FoodMeatHumanEarsCooked
+
+#Human Eyes
+- type: constructionGraph
+  id: GrilledHumanEyes
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: human eyes cooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: human eyes cooked
+    entity: FoodMeatHumanEyesCooked
+
+#Human Heart
+- type: constructionGraph
+  id: GrilledHumanHeart
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: human heart cooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: human heart cooked
+    entity: FoodMeatHumanHeartCooked
+
+#Human Kidneys
+- type: constructionGraph
+  id: GrilledHumanKidneys
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: human kidneys cooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: human kidneys cooked
+    entity: FoodMeatHumanKidneysCooked
+
+#Human Liver
+- type: constructionGraph
+  id: GrilledHumanLiver
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: human liver cooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: human liver cooked
+    entity: FoodMeatHumanLiverCooked
+
+#Human Lungs
+- type: constructionGraph
+  id: GrilledHumanLungs
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: human lungs cooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: human lungs cooked
+    entity: FoodMeatHumanLungsCooked
+
+#Human Stomach
+- type: constructionGraph
+  id: GrilledHumanStomach
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: human stomach cooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: human stomach cooked
+    entity: FoodMeatHumanStomachCooked
+
+#Animal Kidneys
+- type: constructionGraph
+  id: GrilledAnimalKidneys
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: animal kidneys cooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: animal kidneys cooked
+    entity: FoodMeatAnimalKidneysCooked
+
+#Animal Liver
+- type: constructionGraph
+  id: GrilledAnimalLiver
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: animal liver cooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: animal liver cooked
+    entity: FoodMeatAnimalLiverCooked
+
+#Animal Lungs
+- type: constructionGraph
+  id: GrilledAnimalLungs
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: animal lungs cooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: animal lungs cooked
+    entity: FoodMeatAnimalLungsCooked
+
+#Animal Heart
+- type: constructionGraph
+  id: GrilledAnimalHeart
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: animal heart cooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: animal heart cooked
+    entity: FoodMeatAnimalHeartCooked
+
+#Animal Stomach
+- type: constructionGraph
+  id: GrilledAnimalStomach
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: animal stomach cooked
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+
+  - node: animal stomach cooked
+    entity: FoodMeatAnimalStomachCooked

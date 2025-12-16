@@ -22,6 +22,29 @@
   - type: Tag
     tags:
       - Meat
+  # This is BPL custom and needed for it to cook
+  - type: InternalTemperature
+    thickness: 0.02
+    conductivity: 0.43
+    area: 0.02 #Same as the regular meat
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Meaterial: 300
+  - type: Temperature
+    currentTemperature: 290
+  # Fixtures are overridden
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 1
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
 
 - type: entity
   id: BaseAnimalOrgan
@@ -63,6 +86,11 @@
   - type: Item
     size: Small
     heldPrefix: lungs
+  # This is BPL custom
+  - type: Construction
+    graph: GrilledAnimalLungs
+    node: start
+    defaultTarget: animal lungs cooked
 
 - type: entity
   id: OrganAnimalStomach
@@ -92,6 +120,11 @@
   - type: Item
     size: Small
     heldPrefix: stomach
+  # This is BPL custom
+  - type: Construction
+    graph: GrilledAnimalStomach
+    node: start
+    defaultTarget: animal stomach cooked
 
 - type: entity
   id: OrganMouseStomach
@@ -110,6 +143,11 @@
   - type: Item
     size: Small
     heldPrefix: stomach
+  # This is BPL custom. It is not different from other stomachs as far as eating is concerned
+  - type: Construction
+    graph: GrilledAnimalStomach
+    node: start
+    defaultTarget: animal stomach cooked
 
 - type: entity
   id: OrganAnimalLiver
@@ -128,6 +166,11 @@
   - type: Item
     size: Small
     heldPrefix: liver
+  # This is BPL custom
+  - type: Construction
+    graph: GrilledAnimalLiver
+    node: start
+    defaultTarget: animal liver cooked
 
 - type: entity
   id: OrganAnimalHeart
@@ -148,6 +191,11 @@
   - type: Item
     size: Small
     heldPrefix: heart
+  # This is BPL custom
+  - type: Construction
+    graph: GrilledAnimalHeart
+    node: start
+    defaultTarget: animal heart cooked
 
 - type: entity
   id: OrganAnimalKidneys
@@ -167,3 +215,8 @@
   - type: Item
     size: Small
     heldPrefix: kidneys
+  # This is BPL custom
+  - type: Construction
+    graph: GrilledAnimalKidneys
+    node: start
+    defaultTarget: animal kidneys cooked
